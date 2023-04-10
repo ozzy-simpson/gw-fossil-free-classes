@@ -1,0 +1,25 @@
+{
+    "name": "GW Fossil Free Classes",
+    "description": "Adds an icon to Fossil Free Faculty in GWeb",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://bssoweb.gwu.edu:8002/StudentRegistrationSsb/*"
+            ],
+            "js": ["ffc.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["fff-icon.png"],
+            "matches": ["https://bssoweb.gwu.edu:8002/*"]
+        }
+    ],
+    "icons": {
+        "16": "fff-icon.png",
+        "48": "fff-icon.png",
+        "128": "fff-icon.png"
+    }
+}
