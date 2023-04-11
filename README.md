@@ -1,5 +1,5 @@
 # GW Fossil Free Classes
-This Chrome extension adds an icon (<img src="fff-icon.png" width="16px" alt="Fossil Free Faculty icon" style="position: relative;top:4px;">) next to Fossil Free Faculty names in course lists on GWeb. For more information about Fossil Free Classes, see [the website](https://sunrisegw.org/fossil-free-classes).
+This Chrome extension adds an icon (<img src="fff-icon.png" width="16px" alt="Fossil Free Faculty icon" style="position: relative;top:4px;">) next to Fossil Free Faculty names in course lists on GWeb to quickly identify professors dedicated to climate justice. For more information about Fossil Free Classes, see [the website](https://sunrisegw.org/fossil-free-classes).
 
 ![Screenshot of Fossil Free Classes](example.png)
 
