@@ -63,7 +63,7 @@ const profs = [
     "Mina Simhai",
     "Michael Svoboda",
     "Andrew Thompson",
-    "Dr. Richard Tollo",
+    "Richard Tollo",
     "Joseph Trullinger",
     "William Winstead",
     "Nicola Wolfe",
@@ -72,6 +72,11 @@ const profs = [
     "William Youmans",
     "Tadeusz Zawidzki",
     "Angela Zimmerman",
+    "Richard Lanthier",
+    "Tom Long",
+    "James Hershberg",
+    "Emma Backe",
+    "Loren Kajikawa"
 ];
 
 function addIconToMatchingInstructors() {
