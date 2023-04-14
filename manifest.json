@@ -13,7 +13,10 @@
     ],
     "web_accessible_resources": [
         {
-            "resources": ["fff-icon.png"],
+            "resources": [
+                "fff-icon.png",
+                "https://raw.githubusercontent.com/ozzy-simpson/gw-fossil-free-classes/master/profs.json"
+            ],
             "matches": ["https://bssoweb.gwu.edu:8002/*"]
         }
     ],

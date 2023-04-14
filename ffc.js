@@ -1,83 +1,12 @@
-const profs = [
-    "Lowell Abrams",
-    "Elisabeth Anker",
-    "Eyal Aviv",
-    "Nicole Bartels",
-    "Tonya Beckman",
-    "Lisa Benton-Short",
-    "Emily Bock",
-    "Steven Brady",
-    "Thea Brown",
-    "Janice Butler",
-    "Caitlin Chazen",
-    "Theodore Christov",
-    "Jamie Cohen-Cole",
-    "Megan Davis",
-    "David DeGrazia",
-    "Hartmut Doebel",
-    "Julie Donovan",
-    "Stephen Dopkins",
-    "Eric Dunn",
-    "Wade Fletcher",
-    "Andrew Gretes",
-    "Thomas Guglielmo",
-    "Hope Harrison",
-    "Nicole Ivy",
-    "Carly Jordan",
-    "Cory Jorgensen",
-    "Moses Kansanga",
-    "David Karpf",
-    "Melissa Keeley",
-    "Michelle Kelso",
-    "Ivy Ken",
-    "Subrata Kundu",
-    "Peter LaPuma",
-    "John Lill",
-    "Steven Livingston",
-    "Aman Luthra",
-    "Cole Malloy",
-    "Michael Mann",
-    "Gordon Mantler",
-    "John Manubay",
-    "Giuseppina Mattietti-Kysar",
-    "Cynthia McClintock",
-    "Shawn McHale",
-    "Robert McRuer",
-    "Ludmila Michael",
-    "Barbara Miller",
-    "Maria del Carmen Montoya",
-    "Thiago Moreira",
-    "Danika Myers",
-    "Guillermo Orti",
-    "Robert Orttung",
-    "Laura Papish",
-    "Scott Powell",
-    "Pamela Presser",
-    "Lucia Rafanelli",
-    "Mark Ralkowski",
-    "Phyllis Ryder",
-    "Eric Saidel",
-    "Tara Scully",
-    "Katrin Schultheiss",
-    "Jonathan Shea",
-    "Mina Simhai",
-    "Michael Svoboda",
-    "Andrew Thompson",
-    "Richard Tollo",
-    "Joseph Trullinger",
-    "William Winstead",
-    "Nicola Wolfe",
-    "Zachary Wolfe",
-    "Erica Wortham",
-    "William Youmans",
-    "Tadeusz Zawidzki",
-    "Angela Zimmerman",
-    "Richard Lanthier",
-    "Tom Long",
-    "James Hershberg",
-    "Emma Backe",
-    "Loren Kajikawa"
-];
+const profs = [];
+
+fetch(
+    "https://raw.githubusercontent.com/ozzy-simpson/gw-fossil-free-classes/master/profs.json"
+)
+    .then((response) => response.json())
+    .then((data) => {
+        profs.push(...data.profs);
+    });
 
 function addIconToMatchingInstructors() {
     if (!document.querySelector("#searchResultsTable table")) {
@@ -123,7 +52,6 @@ function addIconToMatchingInstructors() {
 
 
 const observer = new MutationObserver(addIconToMatchingInstructors);
-// const observer = new MutationObserver(highlightMatchingRows);
 observer.observe(document.body, { subtree: true, childList: true });
 
 const style = document.createElement("style");
